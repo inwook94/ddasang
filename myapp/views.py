@@ -49,7 +49,7 @@ def predict(request): #
     #estimator = LinearRegression()
 
 
-    estimator = joblib.load('/home/ubuntu/ddasang/xgb_model.model') 
+    estimator = joblib.load('/home/ubuntu/myproject/ddasang/xgb_model.model') 
 
     #x_test = [[0.13047393, 0.32338637],
     #          [0.83383158, 0.17852872]]
