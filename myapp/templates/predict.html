@@ -1,0 +1,24 @@
+<center>물보라를 일으켜 따따따따 따따따따따상</center>
+<br>
+<br>
+
+<center>
+<form action=/myapp/predict>
+경쟁률: <input type=text name='경쟁률' value><br>
+공모가: <input type=text name='공모가'><br>
+종목명: <input type=text name='종목명'><br>
+<input type='submit' value='예측하기'>
+</form>
+</center>
+
+<table align=center border=1>
+{% for y in y_predict %}
+  <tr>
+  <td>{{종목명}} 예상 시초가는 {{y}}원 입니다.</td>
+  </tr>
+{% empty %}
+  <tr>
+  <td colspan=4 align=center>예측 결과가 없습니다.</td>
+  </tr>      
+{% endfor %}
+</table>
